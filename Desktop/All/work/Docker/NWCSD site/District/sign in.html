@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="./_logo/png" href="./_logo.png">
+<link rel='stylesheet' href='./style.css'>
+<div class="navbar" style='background-color: #ff0000;'>
+<img class='logo' border="0" alt="logo" src="./logo.png" width="220" height="65">
+</div>
+</div>
+</div>
+	<title>Login to NWCSD</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./_logo"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+   <body>
+<div class="all">
+	
+	<div class="limiter">
+<div class="container-login100" style="background-color: black;">
+			<div class="wrap-login100" >
+				<div class="login100-form-title" style="background-image: url(./splash.jpg);" style='position: absolute;'>
+					<span class="login100-form-title-1">
+</br>
+						Sign In
+					</span>
+				</div>
+</br>
+</br>
+				<form class="login100-form validate-form" onsubmit="return store(); return false;">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input id='user' class="input100" type="email" name="username" placeholder="Enter Email">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input id='passcode' class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div id='check' class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="./login_support.html" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Log in to NWCSD
+						</button>
+					</div>
+				</form>
+<div id='message'>please log in</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+<script>
+    var pass = document.getElementById('passcode').value;
+    var username = document.getElementById('user').value;
+    var remember = document.getElementById('ckb1').value;
+function store() {
+    var pass = document.getElementById('passcode').value;
+    var username = document.getElementById('user').value;
+    var remember = document.getElementById('ckb1').value;
+    document.getElementById("message").innerHTML = username,pass,remember;
+    console.log(username,pass,remember)
+};
+
+</body>
+</html>

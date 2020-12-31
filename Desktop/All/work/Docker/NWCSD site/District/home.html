@@ -1,0 +1,214 @@
+<title>NWCSD Official Website</title> 
+<link rel="icon" type="./_logo/png" href="./_logo.png">
+<html>
+<link rel='stylesheet' href='./style.css'>
+<div id="header-template"><!--Your header.html placeholder--></div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+$("#header-template").load("./header.html");
+$("#footer-template").load("./footer.html");
+$("#popup").load("./covid-popup.html");
+});
+</script>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 110%;
+  position: relative;
+  margin: 0;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 0px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 0px 0px;
+  position: absolute;
+  Display: none;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 3px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 90%) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./image1.jpg" style="width:100%">
+  <div class="text">Errick road middle school</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./image2.jpg" style="width:100%">
+  <div class="text">Tuscarora Indian school</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./image4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
+
+<div id="popup"><!--Your popup placeholder--></div>
+
+</body>
+</html> 
+
+<div class='page_content'>
+</br>
+</br>
+</br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="vl">
+<h1>Communications for COVID-19</h1></br></br>
+
+    <h3>COVID-19: Yellow Zone Testing Q&A</h3></br></br>
+    <video src="zoom-123.mp4" width='75%' controls></video>
+</br>
+
+    <h3>Covid-19: Yellow Designation and Testing</h3>
+
+    In anticipation of our District receiving a Yellow Zone designation and approval to act as independent laboratory, we are sharing ...</br></br></br>
+    
+    <h3>COVID-19 Cases: Update</h3>
+
+    This update includes a presentation and letter concerning regional designations and the transition to remote learning, should we be included in a Yellow Designation zone. </br></br></br>
+    
+    <h3>Video on Covid-19 Cases: Information Flow and Process</h3></br></br>
+
+    
+    <h2>Messages from Superintendent:</h2>
+
+    <h3>Update on Program Change Requests</h3></br>
+    Re-Opening Plan, Health and Safety Plan, Continuity of Learning Plan, Crisis Pandemic Response Plan, and Student Program Enrollment (Commitment) Forms</br>
+
+    The following information concerns our NYS Education Department required Reopening Plan and Continuity of Learning Plan - including our Regular Education Program and the alternative Virtual Program option...</br></br></br>
+    <h3>HR Department / COVID-19 Information for Staff and Community</h3></br></br>
+
+    
+    Family Resources from Counseling & Social Work Department</br>
+
+    As a counseling department we have created a universal resource guide that consists of information about mental health services, food pantries, clothing closets, and emergency phone numbers. In addition to the resource guide that will be provided, social/emotional resources will be available on the school website.</br></br>
+    Niagara County Department of Health: Frequently Asked Questions Regarding School Reopening</br></br></br>    
+
+    <video src="./nwta.mp4" width='75%' controls></video>      
+
+</br>
+</br>
+</br>
+
+<h2>Welcome to our District</h2></br>
+
+    <h3>About Our District</h3></br>
+
+    Niagara Wheatfield Central School District is comprised of four (4) towns – Town of Wheatfield, Town of Niagara, Town of Lewiston, and the Town of Cambria. Currently our K-12 student enrollment is just over 3,500. The District has four (4) elementary schools
+
+</br>
+</br>
+</br>
+</br>
+</div>
+
+
+<div id="footer-template"><!--Your footer.html placeholder--></div>

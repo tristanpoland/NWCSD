@@ -1,0 +1,162 @@
+<script>
+$(function(){
+$("#header-template").load("../header.html");
+$("#footer-template").load("../footer.html");
+});
+</script>
+<div id="header-template"><!--Your header.html placeholder--></div>
+<div data-tabs="1" id="i267">
+  <nav data-tab-container="1" class="tab-container">
+    <a href="#tab1" data-tab="1" class="tab" id="izsj">About</a>
+    <a href="#tab2" data-tab="1" class="tab" id="iyax">Courses</a>
+    <a href="#tab3" data-tab="1" class="tab" id="iw90r">Resources for class</a>
+  </nav>
+
+
+  <div id="tab1" data-tab-content="1" class="tab-content">
+    <div>Some Information about the teacher
+    </div>
+  </div>
+  <div id="tab2" data-tab-content="1" class="tab-content">
+    <div>A bulleted list of the courses the teacher runs
+    </div>
+  </div>
+  <div id="tab3" data-tab-content="1" class="tab-content">
+    <div id="i72ck">Tab 3 Content
+    </div>
+    <div class="row" id="ioymh">
+      <div class="cell" id="isf0r">
+        <img id="iqfw6" src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png"/>
+      </div>
+      <div class="cell" id="inten">
+        <div id="iezlm">Metamorphic rocks assignment
+          <br/>
+        </div>
+        <a id="i594g"></a>
+        <div id="ikcs6">
+          <a href="https://sites.google.com/view/ideatester/pg1?authuser=1&pli=1" class="link" id="ivhsx">Go to resource</a>
+          <br/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<a id="i06x4"></a>
+<script>var items = document.querySelectorAll('#i267');
+  for (var i = 0, len = items.length; i < len; i++) {
+    (function(){
+      var t,e=this,a="[data-tab]",n=document.body,r=n.matchesSelector||n.webkitMatchesSelector||n.mozMatchesSelector||n.msMatchesSelector,o=function(){
+        var a=e.querySelectorAll("[data-tab-content]")||[];
+        for(t=0;t<a.length;t++)a[t].style.display="none"}
+      ,i=function(n){
+        var r=e.querySelectorAll(a)||[];
+        for(t=0;t<r.length;t++){
+          var i=r[t],s=i.className.replace("tab-active","").trim();
+          i.className=s}
+        o(),n.className+=" tab-active";
+        var l=n.getAttribute("href"),c=e.querySelector(l);
+        c&&(c.style.display="")}
+      ,s=e.querySelector(".tab-active"+a);
+      s=s||e.querySelector(a),s&&i(s),e.addEventListener("click",function(t){
+        var e=t.target;
+        r.call(e,a)&&i(e)}
+                                                        )}
+     .bind(items[i]))();
+  }
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.tab-content{
+  padding:6px 12px;
+  min-height:100px;
+  animation:fadeEffect 1s;
+}
+.row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  padding:10px;
+}
+.cell{
+  min-height:75px;
+  flex-grow:1;
+  flex-basis:100%;
+}
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+}
+#inwi{
+  color:black;
+  width:245px;
+  height:102px;
+}
+.tab{
+  text-decoration:none;
+  color:inherit;
+  padding:7px 14px;
+  transition:opacity 0.3s;
+  display:inline-block;
+  border-radius:3px;
+  margin-right:10px;
+}
+.tab.tab-active{
+  background-color:#0d94e6;
+  color:white;
+}
+#iqfw6{
+  color:black;
+  width:338px;
+  height:141px;
+}
+#iezlm{
+  padding:10px;
+  width:auto;
+}
+#isf0r{
+  flex-basis:10.4%;
+}
+#inten{
+  flex-basis:76.6%;
+}
+#i594g{
+  display:inline-block;
+  padding:5px;
+  min-height:50px;
+  min-width:50px;
+}
+#i06x4{
+  display:inline-block;
+  padding:5px;
+  min-height:50px;
+  min-width:50px;
+}
+#ikcs6{
+  padding:10px;
+}
+@keyframes fadeEffect{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@media (max-width: 768px){
+  .row{
+    flex-wrap:wrap;
+  }
+}
+
+</style>
+
+<div id="footer-template"><!--Your footer.html placeholder--></div>

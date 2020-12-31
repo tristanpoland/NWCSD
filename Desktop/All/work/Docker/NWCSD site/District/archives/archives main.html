@@ -1,0 +1,90 @@
+<link rel='stylesheet' href='../style.css'>
+<title>Archives - NWCSD</title>
+<link rel="icon" type="./_logo/png" href="./_logo.png">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+$("#header-template").load("../header.html");
+$("#footer-template").load("../footer.html");
+});
+</script>
+<div id="header-template"><!--Your header.html placeholder--></div>
+
+<div class='page_content'>
+</br>
+</br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Site Archives" title="Type in a name">
+
+<ul id="myUL">
+
+<!-- Place any further added pages below using the existing pages as a template -->
+
+
+  <li><a href="./archives main.html">Archive Landing page </br>URL: example@nwcsd.org</a></li>
+
+  <li><a href='' style='background-color: red'>No Further items matched your search</a></li>
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</div>
+
+<div id="footer-template"><!--Your footer.html placeholder--></div>
