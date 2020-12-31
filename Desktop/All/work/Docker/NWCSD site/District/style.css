@@ -195,8 +195,9 @@ text-transform: none;
 }
 
 /* Add a grey background color to app links on hover */
-.Appsbtn:hover {
+.Appsbtn:hover .Apps-content{
   background-color: grey;
+  display: block;
 }
 
 /* Show the dropdown menu on hover */
@@ -204,10 +205,6 @@ text-transform: none;
   display: block;
 } 
 
-/* Show the apps menu on click */
-.Appsbtn:hover .Apps-content {
-  display: block;
-} 
 * {box-sizing:border-box}
 
 /* Slideshow container */
