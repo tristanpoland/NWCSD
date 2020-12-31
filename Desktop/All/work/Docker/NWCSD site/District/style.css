@@ -205,7 +205,7 @@ text-transform: none;
 } 
 
 /* Show the apps menu on click */
-.Apps:hover .Apps-content {
+.Appsbtn:hover .Apps-content {
   display: block;
 } 
 * {box-sizing:border-box}
