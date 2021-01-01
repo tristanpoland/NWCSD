@@ -213,11 +213,15 @@ text-transform: none;
 
 /* Add a red background color to app links on hover */
 .Apps .Appsbtn {
-  background-color: black;
+  background-color: red;
 }
 
 
 
+/* Show the apps menu on hover */
+.appsbtn:hover .Apps-content {
+  display: block;
+} 
 
 
 /* Show the dropdown menu on hover */
