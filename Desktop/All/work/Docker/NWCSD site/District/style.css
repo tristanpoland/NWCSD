@@ -188,7 +188,7 @@ text-transform: none;
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Add a red background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: red;
 }
@@ -196,6 +196,7 @@ text-transform: none;
 /* Add a grey background color to app links on hover */
 .Appsbtn:hover .Apps-content{
   display: block;
+  background-color: red;
 }
 
 
@@ -204,6 +205,18 @@ text-transform: none;
 .Appsbtn:hover{
   background-color: grey;
 }
+
+/* Add a red background color to app links on hover */
+.Apps-content td:hover {
+  background-color: red;
+}
+
+/* Add a red background color to app links on hover */
+.Apps .Appsbtn {
+  background-color: black;
+}
+
+
 
 
 
