@@ -3,13 +3,21 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  <script>
+$(function(){
+$("#header-template").load("../header.html");
+$("#footer-template").load("../footer.html");
+});
+</script>
+<div id="header-template"><!--Your header.html placeholder--></div>
+<style>
 body {font-family: Arial;}
 
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #000000;
 }
 
 /* Style the buttons inside the tab */
@@ -26,7 +34,7 @@ body {font-family: Arial;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #00ffff;
 }
 
 /* Create an active/current tablink class */
@@ -64,14 +72,6 @@ body {font-family: Arial;}
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<script>
-$(function(){
-$("#header-template").load("../header.html");
-$("#footer-template").load("../footer.html");
-});
-</script>
-<div id="header-template"><!--Your header.html placeholder--></div>
-<style>
 body {
     background: #262626;
     color: white;
