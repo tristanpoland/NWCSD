@@ -130,7 +130,7 @@ text-transform: none;
   outline: none;
   left: 100 right;
   color: white;
-  padding: 14px 16px;
+  padding: 1px 1px;
   background-color: black;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -211,7 +211,7 @@ text-transform: none;
 } 
 
 /* Show the apps menu on click */
-.Appsbtn:hover .Apps-content {
+.Apps:hover .Apps-content {
   display: block;
 } 
 * {box-sizing:border-box}
