@@ -2,18 +2,7 @@ body{
 	background-color:#ffffff;
 	background-color:#000000;
 }
-
-.vl {
-  border-radius: 10px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  Border-top: 3px solid red;
-  border-left: 3px solid red;
-  Border-right: 3px solid red;
-  Border-bottom: 3px solid red;
-}
+<style>
 .myButton {
 	box-shadow:inset 0px 0px 6px 0px #cf866c;
 	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
@@ -41,6 +30,7 @@ body{
   overflow: hidden;
   background-color: black;
   font-family: Arial;
+}
 
 . videocontainer {
   text-align:center;
@@ -70,7 +60,7 @@ text-transform: none;
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 16px
+  font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -120,7 +110,7 @@ text-transform: none;
 /* Apps button */
 .Apps .Appsbtn {
   font-size: 16px;
-  border: 0px;
+  border: 1p;
   white-space: pre:
   outline: none;
   left: 100 right;
@@ -148,7 +138,7 @@ text-transform: none;
 
 /* Add a red background color to app links on hover */
 .Apps .Appsbtn {
-  background-color: red;
+  background-color: black;
 }
 
 /* Dropdown content (hidden by default) */
@@ -191,28 +181,30 @@ text-transform: none;
   text-align: left;
 }
 
-/* Add a grey background color to app links on hover */
-.Appsbtn:hover .Apps-content{
-  display: block
-  background-color: black;
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: red;
 }
 
-/* Show the apps menu on hover */
-.Appsbtn:hover .Apps-content {
-  display: block;
-} 
-
+/* Add a grey background color to app links on hover */
+.Appsbtn:hover {
+  background-color: grey;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 } 
 
+/* Show the apps menu on click */
+.Apps:hover .Apps-content {
+  display: block;
+} 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -317,6 +309,20 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-	
-/* Links inside the navbar */
 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
