@@ -150,7 +150,7 @@ text-transform: none;
   background-color: red;
 }
 
-/* Add a red background color to app links */
+/* Add a red background color to app button */
 .Apps .Appsbtn {
   background-color: black;
 }
@@ -159,7 +159,7 @@ text-transform: none;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -195,14 +195,15 @@ text-transform: none;
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Add a red background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: black;
+  background-color: red;
 }
 
-/* Add a grey background color to app links on hover */
+/* Add a red background color to app links on hover */
 .Appsbtn:hover {
-  background-color: red;
+  background-color: black;
+  border: 1px;
 }
 
 /* Show the dropdown menu on hover */
