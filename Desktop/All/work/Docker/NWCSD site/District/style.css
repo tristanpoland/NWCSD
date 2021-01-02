@@ -41,7 +41,7 @@ body{
  /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: black;
+  background-color: red;
   font-family: Arial;
 }
 
@@ -135,9 +135,9 @@ text-transform: none;
 }
 
 
-/* Add a red background color to navbar links on hover */
+/* Add a black background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: black;
 }
 
 /* Add a red background color to footer links on hover */
