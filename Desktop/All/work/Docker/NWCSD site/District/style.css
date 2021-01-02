@@ -122,7 +122,7 @@ text-transform: none;
   left: 100 right;
   color: white;
   padding: 14px 16px;
-  background-color: black;
+  background-color: red;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
@@ -147,14 +147,14 @@ text-transform: none;
 
 /* Add a red background color to footer links on hover */
 .footer a:hover {
-  background-color: black;
+  background-color: red;
 }
 /* Add a red background color to app links on hover */
 .Apps-content td:hover {
   background-color: red;
 }
 
-/* Add a red background color to app button */
+/* Add a black background color to app button */
 .Apps .Appsbtn {
   background-color: black;
 }
