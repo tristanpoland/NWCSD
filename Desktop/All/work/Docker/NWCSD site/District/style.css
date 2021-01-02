@@ -15,6 +15,7 @@ body{
   Border-right: 3px solid red;
   Border-bottom: 3px solid red;
 }
+
 .myButton {
 	box-shadow:inset 0px 0px 6px 0px #cf866c;
 	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
