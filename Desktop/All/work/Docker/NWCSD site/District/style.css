@@ -17,7 +17,7 @@ body{
 }
 
 #mybtn {
-	width: 100%
+	width: 94%
 }
 
 .myButton {
@@ -81,17 +81,6 @@ text-transform: none;
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Links inside the footer */
-.footer {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  background-Color: black;
   text-decoration: none;
 }
 
@@ -326,4 +315,16 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
+}
+
+
+/* Links inside the footer */
+.footer {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  background-Color: black;
+  text-decoration: none;
 }
