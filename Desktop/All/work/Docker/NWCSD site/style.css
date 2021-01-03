@@ -116,6 +116,21 @@ text-transform: none;
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+/* Apps button */
+.dropdown_schools {
+  font-size: 16px;
+  border: none;
+  white-space: pre:
+  outline: none;
+  left: 100 right;
+  color: white;
+  padding: 14px 16px;
+  background-color: red;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
 .Apps {
   font-size: 16px;
   border: none;
@@ -201,6 +216,11 @@ text-transform: none;
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+/* Show the dropdown menu on hover */
+.dropdown_schools:hover .dropdown-content {
   display: block;
 } 
 
