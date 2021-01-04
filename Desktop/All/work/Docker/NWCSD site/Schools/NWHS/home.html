@@ -1,151 +1,18 @@
-<title>NWCSD - Covid 19 Information</title> 
+<title>NWCSD Official Website</title> 
 <link rel="icon" type="./_logo/png" href="./_logo.png">
-<div class="navbar">
-
-  <a href="./home.html">
-<img class='logo' border="0" alt="logo" src="./logo.png" width="220" height="65">
-  <a href="#home">Covid 19</a>
-  <a href="#home">Departments</a>
-
-  <div class="dropdown">
-    <button class="dropbtn">Our School
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Assistant Principals</a>
-      <a href="#">Career Center</a>
-      <a href="#">Counseling Center</a>
-      <a href="#">Health Office</a>
-      <a href="#">Staff Directory</a>
-      <a href="#">Health Office</a>
-      <a href="#">Staff Directory</a>
-      <a href="#">Graduation Recordings</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">For Parents
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Parent Portal</a>
-      <a href="#">MySchoolBucks</a>
-      <a href="#">Lunch Menu</a>
-      <a href="#">Code of Conduct</a>
-      <a href="#">DASA: Anti-bullying Resources</a>
-      <a href="#">District-Wide School Safety  Plan</a>
-      <a href="#">Internet Safety for Parents</a>
-      <a href="#">Kindergarden Registration</a>
-      <a href="#">NYSDMV: Teen Electronic Notification Service (TEENS)</a>
-      <a href="#">Parents Bill of Rights</a>
-      <a href="#">Parent University</a>
-      <a href="#">Student Registration</a>
-      <a href="#">Testing Transparency Report</a>
-      <a href="#">Student Services</a>
-      <a href="#">Universal Pre-Kindergarten Program</a>
-      <a href="#">YWCA School Age Child Care Program</a>
-   </div>
-  </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">For Staff
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Web Applications</a>
-      <a href="#">Clubs & Activities</a>
-      <a href="#">Code of Conduct</a>
-      <a href="#">Mary L. Bruce Library</a>
-      <a href="#">Student Portal</a>
-      <a href="#">Teacher Pages</a>
-      <a href="#">NWHS Student Handbook</a>
-      <a href="#">NWHS Student Parking Permit</a>
-      <a href="#">NWHS Marking Periods</a>
-      <a href="#">Student schedule</a>
-   </div>
-  </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">For Staff
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Tech & Web apps</a>
-      <a href="#">Teacher Pages</a>
-      <a href="#">Human Resources</a>
-      <a href="#">Staff Directory</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button class="dropbtn"> Community
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Alumni</a>
-      <a href="#">Community Education</a>
-      <a href="#">Direct Line Newsletter</a>
-      <a href="#">Athletic Hall of Fame</a>
-      <a href="#">NW Wall of Fame</a>
-      <a href="#">Pesticide Neighbor Notification</a>
-      <a href="#">Student Newspaper (Falcon Flyer)</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button class="dropbtn"> Athletics
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Athletics Office</a>
-      <a href="#">Athletic Information</a>
-      <a href="#">Sports Schedule</a>
-      <a href="#">Hall of Fame</a>
-      <a href="#">Important Forms</a>
-      <a href="#">Physicals & Concussion Information</a>
-      <a href="#">Sporting Event Locations</a>
-      <a href="#">Coaching Staff</a>
-      <a href="#">Start Dates</a>
-      <a href="#">Sports Boosters</a>
-      <a href="#">Coaches Corner</a>
-      <a href="#">Helpful Links, and Resources</a>
-    </div>
-  </div>
-</div> 
+<html>
+<link rel='stylesheet' href='./style.css'>
+<div id="header-template"><!--Your header.html placeholder--></div>
 
 
-  <div class="Apps" style='background-color: red;'>
-    <button class="Appsbtn">Apps<i class="fa fa-caret-down"></i></button>
-    <div class="Apps-content">
-	<h2>Your NWHS Apps</br>__________________________________________<h2>
-        <table style="border-collapse: collapse; width: 95.514%; height: 429px;" border=0">
-	<tbody>
-	<tr>
-	<td><a href="./parentandstudentportal.html">
-<img border="0" alt="AppLogo" src="./portal%20logo.png" width="100" height="100"></td>
-	<td><a href="./staffdirectory.html">
-<img border="0" alt="AppLogo" src="./staff%20logo.png" width="100" height="100"></td>
-	<td><a href="./myschoolbucks.html">
-<img border="0" alt="AppLogo" src="./bucks%20logo.png" width="130" height="100"></td>
-	<td><a href="./service desk.html">
-<img border="0" alt="AppLogo" src="./help.png" width="130" height="100"></td>
-	</tr>
-	<tr>
-	<td><a href="./calender.html">
-<img border="0" alt="AppLogo" src="./calender.png" width="130" height="100"></td>
-	<td><a href="./athletics.html">
-<img border="0" alt="AppLogo" src="./sport.png" width="130" height="100"></td>
-	<td><a href="./closings.html">
-<img border="0" alt="AppLogo" src="./alerts.png" width="130" height="100"></td>
-	<td><img src="./portal%20logo.png" alt="" /></td>
-	</tr>
-	</tbody>
-	</table>
-    </div>
-  </div>
-
-
-<div class='page_content'>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+$("#header-template").load("./header.html");
+$("#footer-template").load("./footer.html");
+$("#popup").load("./popup.html");
+});
+</script>
 
 <html>
 <head>
@@ -158,9 +25,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 110%;
+  max-width: 120%;
   position: relative;
   margin: 0;
+  width: 120%;
 }
 
 /* Caption text */
@@ -229,19 +97,19 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="./image1.jpg" style="width:100%">
+  <img src="./image1.JPG" style="width:100%">
   <div class="text">Errick road middle school</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="./image2.jpg" style="width:100%">
+  <img src="./image2.JPG" style="width:100%">
   <div class="text">Tuscarora Indian school</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="./image4.jpg" style="width:100%">
+  <img src="./image4.JPG" style="width:100%">
   <div class="text"></div>
 </div>
 
@@ -276,336 +144,85 @@ function showSlides() {
 }
 </script>
 
+  
+  
+  </br></br>
+<div id="popup"><!--Your popup placeholder--></div></br>
+
+</body>
+</html> 
+
+<div class='page_content'>
+</br>
+</br>
+</br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="vl">
+<h1>Communications for COVID-19</h1></br></br>
+
+    <h3>COVID-19: Yellow Zone Testing Q&A</h3></br></br>
+
+
+
+
+    <video src="zoom-123.mp4" width='75%' poster="./placeholder.png" controls></video>
+
+
+
+
 
 </br>
 
+    <h3>Covid-19: Yellow Designation and Testing</h3>
 
+    In anticipation of our District receiving a Yellow Zone designation and approval to act as independent laboratory, we are sharing ...</br></br></br>
+    
+    <h3>COVID-19 Cases: Update</h3>
 
- <button class="mybutton2" onclick="window.location.https://docs.google.com/forms/d/e/1FAIpQLSdGpX96qmA2Dl1MQgXGmWiQpPlf1zaT4YTl2AY_5FMQdlgV_A/viewform>Daily Asynchronous Attendance</button> 
+    This update includes a presentation and letter concerning regional designations and the transition to remote learning, should we be included in a Yellow Designation zone. </br></br></br>
+    
+    <h3>Video on Covid-19 Cases: Information Flow and Process</h3></br></br>
 
+    
+    <h2>Messages from Superintendent:</h2>
 
+    <h3>Update on Program Change Requests</h3></br>
+    Re-Opening Plan, Health and Safety Plan, Continuity of Learning Plan, Crisis Pandemic Response Plan, and Student Program Enrollment (Commitment) Forms</br>
 
+    The following information concerns our NYS Education Department required Reopening Plan and Continuity of Learning Plan - including our Regular Education Program and the alternative Virtual Program option...</br></br></br>
+    <h3>HR Department / COVID-19 Information for Staff and Community</h3></br></br>
 
-<style>
-.mybutton2 {
-background:    #ff0000;
-border-radius: 11px;
-padding:       20px 45px;
-color:         #ffffff;
-display:       inline-block;
-font:          normal normal 26px/1 "Open Sans", sans-serif;
-text-align:    center;
+    
+    Family Resources from Counseling & Social Work Department</br>
 
-<div id="module-content-9466">
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-</style>
-	</div>
+    As a counseling department we have created a universal resource guide that consists of information about mental health services, food pantries, clothing closets, and emergency phone numbers. In addition to the resource guide that will be provided, social/emotional resources will be available on the school website.</br></br>
+    Niagara County Department of Health: Frequently Asked Questions Regarding School Reopening</br></br></br>    
+
+    <video src="./nwta.mp4" width='75%' controls></video>      
+
+</br>
+</br>
+</br>
+
+<h2>Welcome to our District</h2></br>
+
+    <h3>About Our District</h3></br>
+
+    Niagara Wheatfield Central School District is comprised of four (4) towns – Town of Wheatfield, Town of Niagara, Town of Lewiston, and the Town of Cambria. Currently our K-12 student enrollment is just over 3,500. The District has four (4) elementary schools
+
+</br>
+</br>
 </br>
 </br>
 </div>
-<style>
-.myButton {
-	box-shadow:inset 0px 0px 6px 0px #cf866c;
-	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-	background-color:#d0451b;
-	border:4px solid #942911;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:21px;
-	padding:5px 76px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #854629;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-	background-color:#bc3315;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
- /* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  font-family: Arial;
-}
-
-. videocontainer {
-  text-align:center;
-  width: 100%;
-}
-iframe{
-  width: 70%;
-}
-
-.logo {
-  float: left;
-}
-
-.page_content{
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size: 12px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: #000000;
-font-weight: 200;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Links inside the footer */
-.footer {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  background-Color: black;
-  text-decoration: none;
-}
-
-/* Links inside the footer */
-.footer a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  background-Color: black;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Apps button */
-.Apps .Appsbtn {
-  font-size: 16px;
-  border: 1p;
-  white-space: pre:
-  outline: none;
-  left: 100 right;
-  color: white;
-  padding: 14px 16px;
-  background-color: black;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Add a red background color to footer links on hover */
-.footer a:hover {
-  background-color: red;
-}
-/* Add a red background color to app links on hover */
-.Apps-content td:hover {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Apps content (hidden by default) */
-.Apps-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 600px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the apps */
-.Apps-content {
-  float: none;
-  color: white;
-  padding: 16px 16px;
-  text-decoration: none;
-  display: none;
-  text-align: Center;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: white;
-  padding: 16px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: red;
-}
-
-/* Add a grey background color to app links on hover */
-.Appsbtn:hover {
-  background-color: grey;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-} 
-
-/* Show the apps menu on click */
-.Apps:hover .Apps-content {
-  display: block;
-} 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-</style>
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 
 function showSlides(n) {
   var i;
@@ -624,33 +241,4 @@ function showSlides(n) {
 } 
 </script>
 
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
-}
-</script>
-
- <div class="footer">
-  <a href="./home.html"></a>
-<img class='logo' border="0" alt="logo" src="./logo.png" width="220" height="65"></img>
-  <a href="#home">About</a>
-  <a href="#home">Contact</a>
-  <a href="#home">Calendar</a>
-  <a href="#home">Registration</a>
-</div>
+<div id="footer-template"><!--Your footer.html placeholder--></div>
