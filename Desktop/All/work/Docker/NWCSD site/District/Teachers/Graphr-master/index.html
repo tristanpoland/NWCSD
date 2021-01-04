@@ -98,7 +98,13 @@
 </head>
 
 <body>
+<div id="header-template"><!--Your header.html placeholder--></div>
 
+<script>
+$(function(){
+$("#header-template").load(".../header.html");
+});
+</script>
 <div id="wrapper">
 
 <div id="hideSidebar"><a href="javascript:void(0)" onclick="jsgui.hideSidebar()">&raquo;</a></div>
