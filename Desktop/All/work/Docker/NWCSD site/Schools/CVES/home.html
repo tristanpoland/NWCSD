@@ -130,13 +130,13 @@ Click Here for a detailed reopening letter from Mrs. Vuich
             img = document.getElementById("img1"); 
             // Function to set image dimensions 
             function enlargeImg() { 
-                img.style.width = "60%"; 
+                img.style.width = "80%"; 
                 img.style.height = "auto"; 
                 img.style.transition = "width 0.5s ease"; 
             } 
             // Function to reset image dimensions 
             function resetImg() { 
-                img.style.width = "40%"; 
+                img.style.width = "20%"; 
                 img.style.height = "auto"; 
                 img.style.transition = "width 0.5s ease"; 
             } 
@@ -158,7 +158,7 @@ Click Here for a detailed reopening letter from Mrs. Vuich
                     margin-top: 5em;"> 
             <!-- Image to be enlarged and 
                 onclick() function call-->
-            <img src="./map1.png" onclick="enlargeImg()" id="img1" /> 
+            <img src="./map1.png" onclick="enlargeImg()" id="img2" /> 
             <br /> 
             <br /> 
             <br /> 
@@ -169,16 +169,16 @@ Click Here for a detailed reopening letter from Mrs. Vuich
   
         <!-- script to set display property -->
         <script> 
-            img = document.getElementById("img1"); 
+            img = document.getElementById("img2"); 
             // Function to set image dimensions 
             function enlargeImg() { 
-                img.style.width = "60%"; 
+                img.style.width = "40%"; 
                 img.style.height = "auto"; 
                 img.style.transition = "width 0.5s ease"; 
             } 
             // Function to reset image dimensions 
             function resetImg() { 
-                img.style.width = "40%"; 
+                img.style.width = "80%"; 
                 img.style.height = "auto"; 
                 img.style.transition = "width 0.5s ease"; 
             } 
@@ -275,23 +275,4 @@ Welcome to Colonial Village Elementary School
 </br>
 </br>
 </div>
-<script>
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-</script>
-
-<div id="footer-template"><!--Your footer.html placeholder--></div>
