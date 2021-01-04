@@ -109,43 +109,82 @@ Click Here for a detailed reopening letter from Mrs. Vuich
 <img src="./map2.png" width='75%'></img>
 
 
-<div class="modal in" id="viewImg" tabindex="-1" role="dialog" style="display: block;">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title">View Image</h4>
-      </div>
-      <div class="modal-body">
-        <div id="imgViewer" style="overflow-x: scroll;">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-<style>
-  img-wrapper::after {
-    font-size: 12px;
-    content: 'Click Image To View Full Size';
-    display: block;
-}
-</style>
-$('img').on('click', function(e) {
-  $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail') )
-  $('#viewImg').modal('show')
-})
-$('img').each(function(i,e) {
-  $(e).wrap('<div class="img-wrapper"></div>')
-})
-</script>
+<html> 
+    <body> 
+        <div class="container" 
+             style="text-align: center;  
+                    margin-top: 5em;"> 
+            <!-- Image to be enlarged and 
+                onclick() function call-->
+            <img src="./map2.png" onclick="enlargeImg()" id="img1" /> 
+            <br /> 
+            <br /> 
+            <br /> 
+            <!-- Button to reset the Image size -->
+            <button onclick="resetImg()">Reset 
+          </button> 
+        </div> 
+  
+        <!-- script to set display property -->
+        <script> 
+            img = document.getElementById("img1"); 
+            // Function to set image dimensions 
+            function enlargeImg() { 
+                img.style.width = "60%"; 
+                img.style.height = "auto"; 
+                img.style.transition = "width 0.5s ease"; 
+            } 
+            // Function to reset image dimensions 
+            function resetImg() { 
+                img.style.width = "40%"; 
+                img.style.height = "auto"; 
+                img.style.transition = "width 0.5s ease"; 
+            } 
+        </script> 
+    </body> 
+</html> 
+
   
 </br>
 </br>
     <h3>DISMISSAL MAP</h3>
 </br>
 </br>
-<img src="./map1.png" width='75%'></img>
+<!DOCTYPE html> 
+<html> 
+    <body> 
+        <div class="container" 
+             style="text-align: center;  
+                    margin-top: 5em;"> 
+            <!-- Image to be enlarged and 
+                onclick() function call-->
+            <img src="./map1.png" onclick="enlargeImg()" id="img1" /> 
+            <br /> 
+            <br /> 
+            <br /> 
+            <!-- Button to reset the Image size -->
+            <button onclick="resetImg()">Reset 
+          </button> 
+        </div> 
+  
+        <!-- script to set display property -->
+        <script> 
+            img = document.getElementById("img1"); 
+            // Function to set image dimensions 
+            function enlargeImg() { 
+                img.style.width = "60%"; 
+                img.style.height = "auto"; 
+                img.style.transition = "width 0.5s ease"; 
+            } 
+            // Function to reset image dimensions 
+            function resetImg() { 
+                img.style.width = "40%"; 
+                img.style.height = "auto"; 
+                img.style.transition = "width 0.5s ease"; 
+            } 
+        </script> 
+    </body> 
+</html> 
 </br>
 </br>
     If you have any questions, please feel free to contact the Main Office at any time at (716) 215-3270.   We look forward to partnering with you to make this a wonderful school year!
