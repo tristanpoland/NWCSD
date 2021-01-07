@@ -9,7 +9,7 @@
 <script>
   // app.js
 
-var lock = new Auth0Lock('YOUR_CLIENT_ID', 'YOUR_DOMAIN');
+var lock = new Auth0Lock('wTqURUL00Y8gMlbLC6q60E5A2fETWlEw', 'dev-qhmst0-c.us.auth0.com');
   </script>
 
 <!-- index.html -->
@@ -38,4 +38,24 @@ document.getElementById('btn-login').addEventListener('click', function() {
     }
   });
 });
+  // app.js
+
+var getFoos = fetch('/api/foo', {
+  headers: {
+    'Authorization': 'Bearer ' + localStorage.getItem('userToken')
+  },
+  method: 'GET',
+  cache: false
+});
+
+getFoos.then(function (response) {
+  response.json().then(function (foos) {
+    console.log('the foos:', foos);
+  });
+});
+  // app.js
+
+localStorage.removeItem('userToken');
+localStorage.removeItem('userProfile');
+window.location.href = "/";
   </script>
