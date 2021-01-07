@@ -1,0 +1,14 @@
+// Script uses auth0.js. See Remarks for details.
+<script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script>
+<script type="text/javascript">
+  // Initialize app
+  var webAuth = new auth0.WebAuth({
+    domain:       'dev-qhmst0-c.us.auth0.com',
+    clientID:     'wTqURUL00Y8gMlbLC6q60E5A2fETWlEw'
+  });
+
+  // Trigger login with google
+  webAuth.authorize({
+    connection: 'google-oauth2'
+  });
+</script>
