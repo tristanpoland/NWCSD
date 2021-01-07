@@ -1,17 +1,41 @@
-<script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+<!-- index.html -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Auth0Lock script -->
+  <script src="https://cdn.auth0.com/js/lock-8.1.min.js"></script>
+
+  <!-- Setting the right viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <script>
-  $ npm install firebaseui --save
+  // app.js
 
-var firebase = require('firebase');
-var firebaseui = require('firebaseui');
-</script>
+var lock = new Auth0Lock('YOUR_CLIENT_ID', 'YOUR_DOMAIN');
+  </script>
+
+<!-- index.html -->
+
+  ...
+
+  <button id="btn-login" class="btn-login">Sign In</button>
+
+  ...
+
 <script>
-$ bower install firebaseui --save
-</script>
+  // app.js
 
-<script src="bower_components/firebaseui/dist/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="bower_components/firebaseui/dist/firebaseui.css" />
+document.getElementById('btn-login').addEventListener('click', function() {
+  lock.show(function(err, profile, token) {
+    if (err) {
+      // Error callback
+      console.error("Something went wrong: ", err);
+    } else {
+      // Success calback  
+
+      // Save the JWT token.
+      localStorage.setItem('userToken', token);
+      // Save the profile
+      localStorage.setItem('userProfile', JSON.stringify(profile));
+    }
+  });
+});
+  </script>
