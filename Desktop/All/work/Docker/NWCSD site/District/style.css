@@ -11,7 +11,7 @@ body{
   padding-bottom: 20px;
   padding-left: 20px;
   Border-top: 3px solid red;
-  border-left: 3px solid red;
+  border-left: 3px solid red;dropdown2
   Border-right: 3px solid red;
   Border-bottom: 3px solid red;
 }
@@ -87,13 +87,13 @@ text-transform: none;
 }
 
 /* The dropdown container */
-.dropdown {
+.dropdown2 {
   float: left;
   overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown2 .dropbtn2 {
   font-size: 16px;
   border: none;
   outline: none;
@@ -157,7 +157,7 @@ text-transform: none;
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown2:hover .dropbtn2 {
   background-color: black;
 }
 
@@ -176,7 +176,7 @@ text-transform: none;
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content {
+.dropdown-content2 {
   display: none;
   position: absolute;
   background-color: black;
@@ -206,7 +206,7 @@ text-transform: none;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content2 a {
   float: none;
   color: white;
   padding: 16px 16px;
@@ -216,7 +216,7 @@ text-transform: none;
 }
 
 /* Add a red background color to dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content2 a:hover {
   background-color: red;
 }
 
@@ -227,7 +227,7 @@ text-transform: none;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown2:hover .dropdown-content2 {
   display: block;
 } 
 
