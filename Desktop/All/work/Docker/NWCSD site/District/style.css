@@ -232,7 +232,7 @@ text-transform: none;
 } 
 
 /* Show the dropdown menu on hover */
-.dropdown_schools:hover .dropdown-content {
+.dropdown_schools:hover .dropdown-content2 {
   display: block;
 } 
 
