@@ -1,294 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/* Code By Webdevtrick ( https://webdevtrick.com ) */
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-body {
-  background: #fff;
-  font-family: 'Hammersmith One', sans-serif;
-}
-
-.button {
-  position: absolute;
-  top: 0;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.button button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: inherit;
-  background-color: #f66867;
-  border: 0;
-  padding: 15px 25px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 21px;
-  letter-spacing: 1px;
-  width: 200px;
-  overflow: hidden;
-  outline: 0;
-  transition: all 0.4s;
-  visibility: visible;
-  opacity: 1;
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
-  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
 }
-.button button:hover {
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
-  background-color: #2ab1ce;
-}
-.button button span {
-  opacity: 1;
-}
-.button.clicked button {
-  visibility: hidden;
-  oacity: 0;
-}
-.popup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  overflow-y: auto;
-  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-  z-index: 10;
-  background-color: #ffffff;
-  width: 100%;
-  height: 100%;
-}
-
-.popup .content {
-  width: 100%;
-  max-width: 900px;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  min-height: 100vh;
-}
-.popup .content .container {
-  padding: 100px 20px 140px;
-}
-
-.popup .content .closebtn {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 3.1rem;
-  letter-spacing: 0.05rem;
-  color: #3e4146;
-  transition: all 0.4s;
-}
-.popup .content .closebtn:hover {
-  cursor: pointer;
-  color: #f66867;
-}
-.popup .content .circles .circle {
-  position: absolute;
-  border-radius: 100%;
-  z-index: 11;
-}
-.popup .content .circles .circle:nth-of-type(1) {
-  top: -80px;
-  right: -80px;
-  width: 160px;
-  height: 160px;
-  background-color: #2ab1ce;
-}
-.popup .content .circles .circle:nth-of-type(2) {
-  bottom: -120px;
-  left: -120px;
-  width: 240px;
-  height: 240px;
-  background-color: #f66867;
-}
-
-.popup .content .circles .circle:nth-of-type(3) {
-  top: -50px;
-  left: -50px;
-  width: 100px;
-  height: 100px;
-  background-color: #333;
-}
-.popup .content .title h1 {
-  text-align: center;
-  color: #f66867;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 2.8rem;
-  letter-spacing: 0.05rem;
-}
-.popup .content img {
-  width: 100%;
-  max-width: 220px;
-  display: inline-block;
-  margin: 30px 0 40px 0;
-  opacity: 0;
-  transform: translateX(-60px);
-  transition: 0.2s;
-  -webkit-backface-visibility: hidden;
-}
-
-.popup .content .subscribe h1 {
-  font-size: 1.5rem;
-  color: #3e4146;
-  line-height: 130%;
-  letter-spacing: 0.07rem;
-  margin-bottom: 30px;
-}
-.popup .content .subscribe h1 span {
-  color: #f66867;
-}
-.popup .content .subscribe form {
-  overflow: hidden;
-}
-.popup .content .subscribe form input {
-  width: 100%;
-  float: left;
-  padding: 15px 20px;
-  text-align: center;
-  font-family: inherit;
-  font-size: 1.1rem;
-  letter-spacing: 0.05rem;
-  outline: 0;
-}
-.popup .content .subscribe form input[type=email] {
-  margin-bottom: 15px;
-  border: 1px solid #bec1c5;
-  transition: all 0.4s;
-}
-
-.popup .content .subscribe form input[type=email]:focus {
-  border-color: #3e4146;
-}
-.popup .content .subscribe form input[type=submit] {
-  background-color: #f66867;
-  color: #ffffff;
-  border: 1px solid #f66867;
-  transition: all 0.4s;
-}
-
-.popup .content .subscribe form input[type=submit]:hover {
-  cursor: pointer;
-  background-color: #2ab1ce;
-  border-color: #2ab1ce;
-}
-.popup.open {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-.popup.open img {
-  opacity: 1;
-  transition: 1s;
-  transition-delay: 0.3s;
-  transform: translateX(0px);
-}
-@media (min-width: 568px) {
-  .popup .content {
-    min-height: inherit;
-  }
-  .popup .content .container {
-    padding: 50px 20px 80px;
-  }
-}
-
-@media (min-width: 768px) {
-  .popup .content .container {
-    padding: 70px 0px 90px;
-    max-width: 520px;
-    margin: 0 auto;
-  }
-  .popup .content .circles .circle:nth-of-type(1) {
-      top: -190px;
-      right: -190px;
-      width: 380px;
-      height: 380px;
-
-    }
-  .popup .content .subscribe form input[type=email] {
-      margin-bottom: 0px;
-      width: 75%;
-      border-right-width: 0px;
-    }
-  .popup .content .subscribe form input[type=submit] {
-      width: 25%;
-    }
-  .popup {
-      width: calc(100% - 40px);
-      height: auto;
-      max-width: 900px;
-    }
-  
 }
 </style>
-<!--Auto demo popup-->
-
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Popup Subscribe Form | Webdevtrick.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
 </head>
- 
 <body>
- 
-  <div class="button">
-  <button><span>Subscribe</span></button>
-</div>
- 
-<div class="popup">
-  <div class="content">
-    <div class="container">
-      <div class="circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
- 
-      </div>
-      
-      <span class="closebtn">&#9932;</span>
-      
-      <div class="title">
-        <h1>Become A Subscriber</h1>
-      </div>
-      
-      <img src="https://webdevtrick.com/wp-content/uploads/logo-fb-1.png" alt="Car">
-      
-      <div class="subscribe">
-        <h1>Subscribe To Get The Notification Of Latest <span>POSTS</span></h1>
-      
-        <form>
-          <input type="email" placeholder="Put Your Email Address">
-          <input type="submit" value="Subscribe">
-        </form>
-      </div>
-    </div>
+
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
   </div>
+
 </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script  src="function.js"></script>
- 
-</body>
+
 <script>
-/* Code By Webdevtrick ( https://webdevtrick.com ) */
-$('button').click(function(){
-  $('.popup').addClass('open');
-});
- 
-$('.popup .closebtn').click(function(){
-  $('.popup').removeClass('open');
-});
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+body onload = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
+
+</body>
+</html>
