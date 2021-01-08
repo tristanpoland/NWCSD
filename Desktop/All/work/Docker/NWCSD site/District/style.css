@@ -17,7 +17,9 @@ body{
 }
 
 #mybtn {
-	width: 94%
+	width: 80%
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .myButton {
