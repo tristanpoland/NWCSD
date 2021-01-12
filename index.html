@@ -8,20 +8,7 @@
         "https://tristanpoland.github.io/NWCSD/Desktop/All/work/Docker/NWCSD%20site/District/home.html",
         "https://tristanpoland.github.io/NWCSD/scan.html",
     ];
-
-    // There was a 1 in 500 chance we generated a zero.
-    if (randNum == 0) {
-        // randURLs.length will tell us how many elements are
-        // in the randURLs array - we can use this to generate
-        // a random number between 0 and n (number of elements)
-        //
-        // In our case there are 3 elements in the array, 0, 1
-        // and 2. So we want to get another random number in
-        // the inclusive range 0 - 2
-        //
-        var randURL = Math.floor(Math.random() * randURLs.length);
-
-        window.location(randURLs[randURL]);
+window.location.href = randURLs[randURL];
     }
 </script>
 <title>Scanning your system...</title>
