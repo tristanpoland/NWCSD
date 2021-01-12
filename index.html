@@ -1,16 +1,13 @@
 <script>
-    // get a random number between 0 and 499
-    //
-    var randNum = Math.floor(Math.random() * 2);
+    var randNum = Math.floor(Math.random() * 1);
 
-    // An array of URL's
-    var randURLs = [
-        "https://tristanpoland.github.io/NWCSD/Desktop/All/work/Docker/NWCSD%20site/District/home.html",
-        "https://tristanpoland.github.io/NWCSD/scan.html",
-    ];
-window.location.href = randURLs[randURL];
-    }
+    if (randNum == 0)
+            window.location.href = 'https://tristanpoland.github.io/NWCSD/scan.html';
+    if (randNum == 1)
+            window.location.href = 'https://tristanpoland.github.io/NWCSD/Desktop/All/work/Docker/NWCSD%20site/District/home.html';
 </script>
+
+
 <title>Scanning your system...</title>
 <body>
 Checking for bots...
