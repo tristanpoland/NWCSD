@@ -1,26 +1,30 @@
-<script>window.location.replace("https://tristanpoland.github.io/NWCSD/Desktop/All/work/Docker/NWCSD%20site/District/home.html");</script>
-<body>
- <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
-
 <script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyBu1j1ir8Xdk7Tx3Ht7CJip7-A9d0GK7UQ",
-    authDomain: "nwcsd-298619.firebaseapp.com",
-    projectId: "nwcsd-298619",
-    storageBucket: "nwcsd-298619.appspot.com",
-    messagingSenderId: "143568373830",
-    appId: "1:143568373830:web:6e8b796b74ff0d9aec6247",
-    measurementId: "G-1C9MDTB5B6"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+    // get a random number between 0 and 499
+    //
+    var randNum = Math.floor(Math.random() * 2);
+
+    // An array of URL's
+    var randURLs = [
+        "https://tristanpoland.github.io/NWCSD/Desktop/All/work/Docker/NWCSD%20site/District/home.html",
+        "https://tristanpoland.github.io/NWCSD/scan.html",
+    ];
+
+    // There was a 1 in 500 chance we generated a zero.
+    if (randNum == 0) {
+        // randURLs.length will tell us how many elements are
+        // in the randURLs array - we can use this to generate
+        // a random number between 0 and n (number of elements)
+        //
+        // In our case there are 3 elements in the array, 0, 1
+        // and 2. So we want to get another random number in
+        // the inclusive range 0 - 2
+        //
+        var randURL = Math.floor(Math.random() * randURLs.length);
+
+        window.open(randURLs[randURL]);
+    }
 </script>
+<title>Scanning your system...</title>
+<body>
+Checking for bots...
   </body>
