@@ -6315,11 +6315,18 @@ body{
     "dropdwnitems dropdwnitems dropdwndescription dropdwndescription";
 }
 
-.dropdwnitems { grid-area: dropdwnitems; }
+.dropdwnitems { 
+	grid-area: dropdwnitems;
+	Border-right: 2px solid white;
+}
 
-.dropdwnimage { grid-area: dropdwnimage; }
+.dropdwnimage { 
+	grid-area: dropdwnimage; 
+}
 
-.dropdwndescription { grid-area: dropdwndescription; }
+.dropdwndescription { 
+	grid-area: dropdwndescription; 
+}
 
 
 .vl {
