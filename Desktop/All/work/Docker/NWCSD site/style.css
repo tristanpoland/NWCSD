@@ -1,10 +1,6 @@
 body{
   background-color:#000000;
   text-color:#ffffff;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
 }
 
 
@@ -14,6 +10,7 @@ body{
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  margin: 10px;
   Border-top: 3px solid red;
   border-left: 3px solid red;
   Border-right: 3px solid red;
