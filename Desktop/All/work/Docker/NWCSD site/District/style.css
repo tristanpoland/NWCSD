@@ -6317,7 +6317,7 @@ body{
 
 .dropdwnitems { 
 	grid-area: dropdwnitems;
-	Border-right: 2px solid white;
+	Border-right: 1px solid grey;
 	min-width: 160px;
 }
 
