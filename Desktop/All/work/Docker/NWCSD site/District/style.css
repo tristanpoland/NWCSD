@@ -6569,7 +6569,7 @@ text-transform: none;
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 20px;
 }
 
 /* Hide the images by default */
