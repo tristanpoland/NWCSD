@@ -6319,13 +6319,13 @@ body{
 	grid-area: dropdwnitems;
 	Border-right: 1px solid grey;
 	min-width: 160px;
-        max-width: 160px;
+        max-width: 220px;
 }
 
 .dropdwnimage { 
 	grid-area: dropdwnimage;
-	min-width: 140px;
-	max-width: 140px;
+	min-width: 40%;
+	max-width: 40%;
 }
 
 .dropdwndescription { 
