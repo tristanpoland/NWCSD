@@ -6303,7 +6303,6 @@ body{
 	text-color:#ffffff;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6324,8 +6323,8 @@ body{
 
 .dropdwnimage { 
 	grid-area: dropdwnimage;
-	min-width: 40%;
-	max-width: 40%;
+	min-width: 350;
+	max-width: 350;
 }
 
 .dropdwndescription { 
