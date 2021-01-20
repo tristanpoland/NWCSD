@@ -6318,10 +6318,12 @@ body{
 .dropdwnitems { 
 	grid-area: dropdwnitems;
 	Border-right: 2px solid white;
+	min-width: 160px;
 }
 
 .dropdwnimage { 
-	grid-area: dropdwnimage; 
+	grid-area: dropdwnimage;
+	min-width: 140px;
 }
 
 .dropdwndescription { 
