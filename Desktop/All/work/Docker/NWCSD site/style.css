@@ -3,6 +3,23 @@ body{
   text-color:#ffffff;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "dropdwnitems dropdwnitems dropdwnimage dropdwnimage"
+    "dropdwnitems dropdwnitems dropdwnimage dropdwnimage"
+    "dropdwnitems dropdwnitems dropdwndescription dropdwndescription";
+}
+
+.dropdwnitems { grid-area: dropdwnitems; }
+
+.dropdwnimage { grid-area: dropdwnimage; }
+
+.dropdwndescription { grid-area: dropdwndescription; }
+
 
 .vl {
   border-radius: 10px;
