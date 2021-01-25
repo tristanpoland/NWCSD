@@ -2,3 +2,8 @@
 permalink: /404.html
 ---
 theme: jekyll-theme-slate
+
+tipue_search:
+  include:
+    pages: true
+    collections: [apples, oranges]
