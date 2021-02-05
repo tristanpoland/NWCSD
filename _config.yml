@@ -2,12 +2,3 @@
 permalink: /404.html
 ---
 theme: jekyll-theme-slate
-
-tipue_search:
-  include:
-    pages: true
-    collections: [apples, oranges]
-  exclude:
-    files: [search.html, _apples/gragg.md]
-    tags: [tag1, tag2]
-    categories: [category1, category2]
