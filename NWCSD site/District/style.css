@@ -6384,6 +6384,7 @@ text-transform: none;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 15px;
 }
 
 /* The dropdown container */
