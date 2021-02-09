@@ -6396,6 +6396,7 @@ text-transform: none;
 .dropdown2 .dropbtn2 {
   font-size: 16px;
   border: none;
+  border-radius: 15px;
   outline: none;
   color: white;
   padding: 14px 16px;
@@ -6407,6 +6408,7 @@ text-transform: none;
 /* Apps button */
 .Appsbtn {
   font-size: 16px;
+  border-radius: 15px;
   border: none;
   white-space: pre:
   outline: none;
